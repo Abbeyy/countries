@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: black;
+  margin: 0;
+  padding: 0;
 }

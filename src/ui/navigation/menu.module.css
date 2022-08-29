@@ -1,15 +1,24 @@
 .Sidebar {
-
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 12rem;
+    background-color: #DBCBC8;
+    justify-content: center;
 }
 
 .Title {
-
+    text-align: center;
+    color: #564787;
 }
 
 .Menu {
-
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
 .Option {
-
+    color: white;
+    text-decoration: none;
 }

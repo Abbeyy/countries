@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.Home {
+    background-color: #F2FDFF;
+    display: flex;
+    flex: 3;
+}
+
+.Title {
+    font-family: 'Permanent Marker', cursive;
+}

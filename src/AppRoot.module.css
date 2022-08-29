@@ -1,0 +1,44 @@
+.AppRoot {
+    display: flex;
+    flex-direction: row;
+}
+
+.PurpleColor {
+    color: #564787;
+}
+
+.PurpleBackgroundColor {
+    background-color: #564787;
+}
+
+.MauveColor {
+    color: #DBCBC8;
+}
+
+.MauveBackgroundColor {
+    background-color: #DBCBC8;
+}
+
+.LightColor {
+    color: #F2FDFF;
+}
+
+.LightBackgroundColor {
+    background-color: #F2FDFF;
+}
+
+.BlueColor {
+    color: #9AD4D6;
+}
+
+.BlueBackgroundColor {
+    background-color: #9AD4D6;
+}
+
+.DarkColor {
+    color: #101935;
+}
+
+.DarkBackgroundColor {
+    background-color: #101935;
+}
