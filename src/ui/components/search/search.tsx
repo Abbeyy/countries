@@ -43,9 +43,20 @@ export const Search = (props: Props) => {
     }
   };
 
+  const clearSearch = () => {
+    setSearchValue("");
+    switch (item) {
+      case "country":
+        dispatch(setCountriesSearch(null));
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
-    <div>
-      <h3>{`Search for a ${item}`}</h3>
+    <div className={styles["Search"]}>
+      <h3 className={styles["Title"]}>{`Search for a ${item}`}</h3>
       <input
         placeholder="Start typing"
         className={styles["SearchInput"]}
@@ -54,6 +65,9 @@ export const Search = (props: Props) => {
         onChange={onChangeSearch}
         onKeyDown={onKeyDown}
       />
+      <div onClick={clearSearch} className={styles["Clear"]}>
+        clear
+      </div>
     </div>
   );
 };

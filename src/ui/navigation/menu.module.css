@@ -3,22 +3,34 @@
     flex: 1;
     flex-direction: column;
     min-width: 12rem;
-    background-color: #DBCBC8;
+    background-color: #e2dcf7;
     justify-content: center;
 }
 
 .Title {
     text-align: center;
-    color: #564787;
+    background-color: #564787;
+    padding: 0.5rem 1.5rem;
+    align-self: center;
+    border-radius: 10px;
+    font-size:20px;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .Menu {
     display: flex;
     flex: 1;
     justify-content: center;
+    border-top: 0.1rem solid #a193cf;
+    margin: 0 3rem;
 }
 
 .Option {
-    color: white;
+    color: #564787;
     text-decoration: none;
+    margin-top: 0.5rem;
+    font-weight: 900;
 }

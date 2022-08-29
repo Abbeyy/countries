@@ -1,16 +1,19 @@
 import { useAppSelector } from "../../../hooks";
 import { searchCountries } from "../../../redux/selectors/country";
-import { CountriesSearch } from "./countriesSearch";
+import { CountriesSearch } from "./search/countriesSearch";
+import styles from "./countries.module.css";
 
 export const Countries = () => {
   const countries = useAppSelector(searchCountries);
 
   return (
-    <div>
+    <div className={styles["Countries"]}>
       <CountriesSearch />
-      {countries?.length ? (
-        <p>{countries.map((country) => country.name).join(",")}</p>
-      ) : null}
+      <div>
+        {countries?.map((country) => (
+          <p>{`${country.name?.official}`}</p>
+        ))}
+      </div>
     </div>
   );
 };

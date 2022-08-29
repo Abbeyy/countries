@@ -1,0 +1,39 @@
+.Search {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    border-bottom: 0.1rem solid #564787;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.Title {
+    font-size: 20px;
+}
+
+.SearchInput {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 2rem;
+    border-radius: 10px;
+    border: 0.1rem solid #564787;
+}
+
+.SearchInput::placeholder {
+    color: #564787;
+    padding-left: 0.5rem;
+}
+
+.SearchInput[type=text] {
+    padding-left: 1rem;
+    color: #564787;
+}
+
+.Clear {
+    color: grey;
+    margin-left: 1rem;
+    font-size: 14px;
+}
