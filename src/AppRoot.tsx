@@ -1,16 +1,17 @@
-import "./App.css";
 import {
   BrowserRouter as Router,
   Routes as Switch,
   Route,
 } from "react-router-dom";
 import styles from "./AppRoot.module.css";
+import Menu from "./ui/navigation/menu";
+import Home from "./ui/components/home/home";
 
 const AppRoot = () => {
   return (
     <Router>
       <div className={styles["AppRoot"]}>
-        <NavigationMenu />
+        <Menu />
 
         <Switch>
           <Route path="/" element={<Home />} />
