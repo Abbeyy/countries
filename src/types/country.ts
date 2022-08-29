@@ -114,3 +114,8 @@ enum SIDE {
   RIGHT = "right",
   LEFT = "left",
 }
+
+export enum VIEW_TYPE {
+  TABLE = "table",
+  PREVIEW = "preview",
+}

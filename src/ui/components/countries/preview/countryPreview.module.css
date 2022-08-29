@@ -1,0 +1,44 @@
+.Preview {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #a193cf;
+    width: 12rem;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 1rem  1rem 0;
+    padding: 1rem 1rem 1rem;
+}
+
+.Details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #e2dcf7;
+    width: 12rem;
+    align-items: center;
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 1rem 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Name {
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    color: #564787;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid white;
+}
+
+.Info {
+    max-width: 12rem;
+    font-size: 14px;
+    color: #564787;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0.2rem;
+}

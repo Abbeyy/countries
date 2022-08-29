@@ -1,0 +1,8 @@
+.Previews {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 700px;
+}
