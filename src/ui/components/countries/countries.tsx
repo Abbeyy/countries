@@ -45,6 +45,7 @@ export const Countries = () => {
 
   return (
     <div className={styles["Countries"]}>
+      <h1 className={styles["Title"]}>Countries</h1>
       <CountriesSearch />
 
       {countries?.length ? (

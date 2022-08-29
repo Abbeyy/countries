@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     flex: 3;
-    margin: 0 1rem;
+    margin: 0 1rem 1rem;
 }
 
 .Title {
@@ -18,4 +18,10 @@
     font-size:40px;
     color: white;
     letter-spacing: 0.1rem;
+}
+
+.Highlight {
+    color: #564787;
+    font-style: italic;
+    font-weight: bolder;
 }

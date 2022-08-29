@@ -9,6 +9,9 @@ const Menu = () => {
         <Link className={styles["Option"]} to="/">
           Home
         </Link>
+        <Link className={styles["Option"]} to="/countries">
+          Countries
+        </Link>
       </div>
     </div>
   );

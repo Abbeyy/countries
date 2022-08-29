@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .Countries {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 3;
+    margin: 0 1rem 1rem;
+}
+
+.Title {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    background-color: #564787;
+    padding: 0.5rem 2rem;
+    align-self: center;
+    border-radius: 10px;
+    font-size:40px;
+    color: white;
+    letter-spacing: 0.1rem;
 }
