@@ -33,7 +33,9 @@
 .Option {
     color: #564787;
     text-decoration: none;
+    padding-left: 0.5rem;
     margin-top: 0.5rem;
     font-weight: 900;
     text-align: center;
+    align-self: center;
 }

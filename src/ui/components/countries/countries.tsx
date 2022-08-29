@@ -21,7 +21,9 @@ export const Countries = () => {
       <h1 className={styles["Title"]}>Countries</h1>
       <CountriesSearch />
 
-      <ChooseView value={view} setValue={setView} />
+      {countries?.length ? (
+        <ChooseView value={view} setValue={setView} />
+      ) : null}
 
       {countries?.length && isTableView ? <CountriesTable /> : null}
 
