@@ -8,3 +8,12 @@ export const searchCountriesError = ({ countries }: RootState) =>
 
 export const searchCountriesLoading = ({ countries }: RootState) =>
   countries.search?.isLoading;
+
+export const allCountries = ({ countries }: RootState) =>
+  countries.all?.countries;
+
+export const allCountriesError = ({ countries }: RootState) =>
+  countries.all?.error;
+
+export const allCountriesLoading = ({ countries }: RootState) =>
+  countries.all?.isLoading;

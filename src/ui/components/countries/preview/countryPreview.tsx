@@ -2,13 +2,14 @@ import { Country } from "../../../../types/country";
 import styles from "./countryPreview.module.css";
 
 type Props = {
-  country: Country;
+  country: Partial<Country>;
+  smaller?: boolean;
 };
 
 const WIDTH = 150;
 
 export const CountryPreview = (props: Props) => {
-  const { country } = props;
+  const { country, smaller } = props;
 
   const { flags, name } = country;
 
@@ -16,11 +17,13 @@ export const CountryPreview = (props: Props) => {
 
   return (
     <div>
-      <div className={styles["Preview"]}>
-        {flags.png ? (
-          <img style={flagStyle} src={flags.png} alt="country flag" />
-        ) : null}
-      </div>
+      {!smaller ? (
+        <div className={styles["Preview"]}>
+          {flags?.png ? (
+            <img style={flagStyle} src={flags.png} alt="country flag" />
+          ) : null}
+        </div>
+      ) : null}
       <div className={styles["Details"]}>
         <h3 className={styles["Name"]}>{name?.official}</h3>
         <p className={styles["Info"]}>{`Population: ${country.population}`}</p>

@@ -6,4 +6,9 @@ export type CountriesState = {
     isLoading: boolean;
     error: string | null;
   };
+  all: {
+    countries: Country[] | null;
+    isLoading: boolean;
+    error: string | null;
+  };
 };

@@ -8,6 +8,11 @@ export const initialState: CountriesState = {
     error: null,
     isLoading: false,
   },
+  all: {
+    countries: null,
+    error: null,
+    isLoading: false,
+  },
 };
 
 export const countriesSlice = createSlice({
@@ -23,6 +28,15 @@ export const countriesSlice = createSlice({
     setCountriesSearchLoading: (state, action: PayloadAction<boolean>) => {
       state.search.isLoading = action.payload;
     },
+    setAllCountries: (state, action: PayloadAction<Country[] | null>) => {
+      state.all.countries = action.payload;
+    },
+    setAllCountriesError: (state, action: PayloadAction<string | null>) => {
+      state.all.error = action.payload;
+    },
+    setAllCountriesLoading: (state, action: PayloadAction<boolean>) => {
+      state.all.isLoading = action.payload;
+    },
   },
 });
 
@@ -30,6 +44,9 @@ export const {
   setCountriesSearch,
   setCountriesSearchError,
   setCountriesSearchLoading,
+  setAllCountries,
+  setAllCountriesError,
+  setAllCountriesLoading,
 } = countriesSlice.actions;
 
 export default countriesSlice.reducer;
