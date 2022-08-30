@@ -57,14 +57,14 @@ export const ChooseView = (props: Props) => {
         onChange={handleChange}
       >
         <FormControlLabel
-          value={VIEW_TYPE.TABLE}
-          control={<Radio sx={radioStyle} />}
-          label="Table"
-        />
-        <FormControlLabel
           value={VIEW_TYPE.PREVIEW}
           control={<Radio sx={radioStyle} />}
           label="Preview"
+        />
+        <FormControlLabel
+          value={VIEW_TYPE.TABLE}
+          control={<Radio sx={radioStyle} />}
+          label="Table"
         />
       </RadioGroup>
     </FormControl>

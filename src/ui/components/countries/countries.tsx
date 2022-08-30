@@ -11,7 +11,7 @@ import { CountriesPreview } from "./preview/countriesPreview";
 export const Countries = () => {
   const countries = useAppSelector(searchCountries);
 
-  const [view, setView] = useState<VIEW_TYPE>(VIEW_TYPE.TABLE);
+  const [view, setView] = useState<VIEW_TYPE>(VIEW_TYPE.PREVIEW);
 
   const isTableView = view === VIEW_TYPE.TABLE;
   const isPreviewView = view === VIEW_TYPE.PREVIEW;
