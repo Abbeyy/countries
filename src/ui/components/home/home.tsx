@@ -1,4 +1,3 @@
-import { Countries } from "../countries/countries";
 import styles from "./home.module.css";
 
 const REST_COUNTRIES_URL = "https://restcountries.com/#rest-countries";

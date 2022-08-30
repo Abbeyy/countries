@@ -5,6 +5,7 @@ import styles from "./menu.module.css";
 enum OPTION {
   HOME = "Home",
   COUNTRIES = "Countries",
+  WORLD_VIEW = "World View",
 }
 
 const Menu = () => {
@@ -35,6 +36,14 @@ const Menu = () => {
           to="/countries"
         >
           Countries
+        </Link>
+        <Link
+          style={selected === OPTION.WORLD_VIEW ? selectedStyle : {}}
+          onClick={() => handleClick(OPTION.WORLD_VIEW)}
+          className={styles["Option"]}
+          to="/world-view"
+        >
+          World View
         </Link>
       </div>
     </div>
